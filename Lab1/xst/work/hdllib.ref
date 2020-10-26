@@ -1,0 +1,9 @@
+EN adder NULL C:/hlocal/Lab/adder.vhd sub00/vhpl00 1538570070
+AR counter behavioral C:/hlocal/Lab/counter.vhd sub00/vhpl05 1538570075
+AR parallel_reg circuit C:/hlocal/Lab/reg_paralelo.vhd sub00/vhpl08 1538570073
+AR reg_paralelo circuito C:/hlocal/Lab/reg_paralelo.vhd sub00/vhpl03 1538568987
+EN tb NULL C:/hlocal/Lab/tb.vhd sub00/vhpl06 1538570076
+EN counter NULL C:/hlocal/Lab/counter.vhd sub00/vhpl04 1538570074
+EN reg_paralelo NULL C:/hlocal/Lab/reg_paralelo.vhd sub00/vhpl02 1538568986
+AR adder behavioral C:/hlocal/Lab/adder.vhd sub00/vhpl01 1538570071
+EN parallel_reg NULL C:/hlocal/Lab/reg_paralelo.vhd sub00/vhpl07 1538570072

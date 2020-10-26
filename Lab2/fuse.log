@@ -1,0 +1,28 @@
+Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/hlocal/TOC/Lab2/TestBench_isim_beh.exe -prj C:/hlocal/TOC/Lab2/TestBench_beh.prj TestBench 
+ISim P.15xf (signature 0xc3576ebc)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/hlocal/TOC/Lab2/register8bits.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab2/FSM.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab2/conv_7seg.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab2/comparator.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab2/Module.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab2/TestBench.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:89 - "C:/hlocal/TOC/Lab2/Module.vhd" Line 55: <debouncer> remains a black-box since it has no binding entity.
+Completed static elaboration
+WARNING:Simulator:648 - "C:/hlocal/TOC/Lab2/Module.vhd" Line 55. Instance debouncer is unbound
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture arch_asyn of entity register8bits [register8bits_default]
+Compiling architecture behavioral of entity conv_7seg [conv_7seg_default]
+Compiling architecture behavioral of entity comparator [comparator_default]
+Compiling architecture behavioral of entity FSM [fsm_default]
+Compiling architecture structural of entity Module [module_default]
+Compiling architecture behavior of entity testbench
+Time Resolution for simulation is 1ps.
+Compiled 13 VHDL Units
+Built simulation executable C:/hlocal/TOC/Lab2/TestBench_isim_beh.exe
+Fuse Memory Usage: 29408 KB
+Fuse CPU Usage: 577 ms

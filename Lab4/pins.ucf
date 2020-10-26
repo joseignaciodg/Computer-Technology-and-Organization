@@ -1,0 +1,98 @@
+################################################
+#the output of the FPGA oscillator is @100MHz
+################################################
+# NET clk_in LOC=T9;
+
+################################################
+# switches upper board
+################################################
+# NET SW<0> LOC=K4;               #SW1
+# NET SW<1> LOC=K3;               #SW2
+# NET SW<2> LOC=K2;               #SW3
+# NET SW<3> LOC=J4;               #SW4
+
+################################################
+# switches extended board
+################################################
+# NET SW<0> LOC=P12;              #SW1
+# NET SW<1> LOC=J1;               #SW2
+# NET SW<2> LOC=H1;               #SW3
+# NET SW<3> LOC=H3;               #SW4
+# NET SW<4> LOC=G2;               #SW5
+# NET SW<5> LOC=K15;              #SW6
+# NET SW<6> LOC=K16;              #SW7
+# NET SW<7> LOC=F15;              #SW8
+
+################################################
+# push buttons upper board
+################################################
+# NET SW2 LOC=E11;                #SW2
+# NET SW3 LOC=A13;                #SW3
+
+################################################
+# Push button extended board
+################################################
+# NET pushb1 LOC=H4;              #PB1
+# NET pushb2 LOC=L5;              #PB2
+# NET pushb3 LOC=N2;              #PB3
+# NET pushb4 LOC=M3;              #PB4
+
+################################################
+# LEDs bar extended board
+################################################
+# NET leds<0> LOC=L5;             #LED1
+# NET leds<1> LOC=N2;             #LED2
+# NET leds<2> LOC=M3;             #LED3
+# NET leds<3> LOC=N1;             #LED4
+# NET leds<4> LOC=T13;            #LED5
+# NET leds<5> LOC=L15;            #LED6
+# NET leds<6> LOC=J13;            #LED7
+# NET leds<7> LOC=H15;            #LED8
+# NET leds<8> LOC=J16;            #LED9
+# NET leds<9> LOC=J14;            #LED10
+
+ ################################################
+# 7-segments display 
+#
+#           S0
+#           ---
+#       S5 |   | S1
+#           S6
+#           ---
+#       S4 |   | S2
+#           ---
+#           S3
+################################################
+
+################################################
+# 7-segments display upper board
+################################################
+# NET display<0> loc=R10;         #S0
+# NET display<1> loc=P10;         #S1
+# NET display<2> loc=M11;         #S2
+# NET display<3> loc=M6;          #S3
+# NET display<4> loc=N6;          #S4
+# NET display<5> loc=T7;          #S5
+# NET display<6> loc=R7;          #S6
+
+################################################
+#7-segments display left-side extended board 
+################################################
+# NET displayl<0> LOC=H14;        #S0
+# NET displayl<1> LOC=M4;         #S1
+# NET displayl<2> LOC=P1;         #S2
+# NET displayl<3> LOC=N3;         #S3
+# NET displayl<4> LOC=M15;        #S4
+# NET displayl<5> LOC=H13;        #S5
+# NET displayl<6> LOC=G16;        #S6
+
+################################################
+# 7-segments display right-side extended board 
+################################################
+# NET displayr<0> loc=E2;         #S0
+# NET displayr<1> loc=E1;         #S1
+# NET displayr<2> loc=F3;         #S2
+# NET displayr<3> loc=F2;         #S3
+# NET displayr<4> loc=G4;         #S4
+# NET displayr<5> loc=G3;         #S5
+# NET displayr<6> loc=G1;         #S6

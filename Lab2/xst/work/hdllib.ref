@@ -1,0 +1,12 @@
+AR debouncer debouncerarch C:/hlocal/TOC/Lab2/debouncer.vhd sub00/vhpl10 1539764294
+AR conv_7seg behavioral C:/hlocal/TOC/Lab2/conv_7seg.vhd sub00/vhpl07 1539764296
+AR module structural C:/hlocal/TOC/Lab2/Module.vhd sub00/vhpl11 1539764302
+EN module NULL C:/hlocal/TOC/Lab2/Module.vhd sub00/vhpl08 1539764301
+AR fsm behavioral C:/hlocal/TOC/Lab2/FSM.vhd sub00/vhpl01 1539764300
+EN fsm NULL C:/hlocal/TOC/Lab2/FSM.vhd sub00/vhpl00 1539764299
+AR register8bits arch_asyn C:/hlocal/TOC/Lab2/register8bits.vhd sub00/vhpl05 1539764292
+EN conv_7seg NULL C:/hlocal/TOC/Lab2/conv_7seg.vhd sub00/vhpl06 1539764295
+EN debouncer NULL C:/hlocal/TOC/Lab2/debouncer.vhd sub00/vhpl09 1539764293
+EN comparator NULL C:/hlocal/TOC/Lab2/comparator.vhd sub00/vhpl02 1539764297
+AR comparator behavioral C:/hlocal/TOC/Lab2/comparator.vhd sub00/vhpl03 1539764298
+EN register8bits NULL C:/hlocal/TOC/Lab2/register8bits.vhd sub00/vhpl04 1539764291

@@ -1,0 +1,20 @@
+Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/hlocal/TOC/Lab5/tb_module_isim_beh.exe -prj C:/hlocal/TOC/Lab5/tb_module_beh.prj work.tb_module 
+ISim P.15xf (signature 0xc3576ebc)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/hlocal/TOC/Lab5/sequence_generator.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab5/freq_divider.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab5/definitions.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab5/C_mod10.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab5/debouncer.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab5/data_path.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab5/controller.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab5/slot_machine.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab5/conv_7seg.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab5/Module.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab5/tb_module.vhd" into library work
+Starting static elaboration
+ERROR:HDLCompiler:410 - "C:/hlocal/TOC/Lab5/Module.vhd" Line 21: Expression has 4 elements ; expected 7
+ERROR:HDLCompiler:410 - "C:/hlocal/TOC/Lab5/Module.vhd" Line 22: Expression has 4 elements ; expected 7
+ERROR:Simulator:777 - Static elaboration of top level VHDL design unit tb_module in library work failed

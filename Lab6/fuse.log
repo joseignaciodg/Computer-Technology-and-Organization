@@ -1,0 +1,38 @@
+Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/hlocal/TOC/Lab6/TestBenchMIPSMulticycle_isim_beh.exe -prj C:/hlocal/TOC/Lab6/TestBenchMIPSMulticycle_beh.prj work.TestBenchMIPSMulticycle 
+ISim P.15xf (signature 0xc3576ebc)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/hlocal/TOC/Lab6/BlockRam.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab6/registerBank.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab6/register.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab6/multiplexer4to1.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab6/multiplexer2to1.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab6/memory.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab6/ALU.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab6/dataPath.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab6/controlUnit.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab6/MIPSMulticycle.vhd" into library work
+Parsing VHDL file "C:/hlocal/TOC/Lab6/TestBenchMIPSMulticycle.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture controlunitarch of entity controlUnit [controlunit_default]
+Compiling package numeric_std
+Compiling architecture regarch of entity reg [\reg(32)\]
+Compiling architecture multiplexer2to1arch of entity multiplexer2to1 [\multiplexer2to1(32)\]
+Compiling architecture behavioral of entity BlockRam [blockram_default]
+Compiling architecture memory_arch of entity memory [memory_default]
+Compiling architecture multiplexer2to1arch of entity multiplexer2to1 [\multiplexer2to1(5)\]
+Compiling architecture multiplexer4to1arch of entity multiplexer4to1 [\multiplexer4to1(32)\]
+Compiling architecture registerbankarch of entity registerBank [registerbank_default]
+Compiling architecture aluarch of entity ALU [alu_default]
+Compiling architecture datapatharch of entity dataPath [datapath_default]
+Compiling architecture mipsmulticyclearch of entity MIPSMulticycle [mipsmulticycle_default]
+Compiling architecture behavior of entity testbenchmipsmulticycle
+Time Resolution for simulation is 1ps.
+Compiled 26 VHDL Units
+Built simulation executable C:/hlocal/TOC/Lab6/TestBenchMIPSMulticycle_isim_beh.exe
+Fuse Memory Usage: 35508 KB
+Fuse CPU Usage: 827 ms

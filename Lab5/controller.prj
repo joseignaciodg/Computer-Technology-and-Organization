@@ -1,0 +1,2 @@
+vhdl work "definitions.vhd"
+vhdl work "controller.vhd"

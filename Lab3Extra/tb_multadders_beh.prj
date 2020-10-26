@@ -1,0 +1,3 @@
+vhdl work "adder8bits.vhd"
+vhdl work "Mult_with_Adders.vhd"
+vhdl work "tb_multadders.vhd"

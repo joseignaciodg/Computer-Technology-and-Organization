@@ -1,0 +1,58 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/hlocal/TOC/Lab5/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to C:/hlocal/TOC/Lab5/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/hlocal/TOC/Lab5/definitions.vhd" in Library work.
+Compiling vhdl file "C:/hlocal/TOC/Lab5/C_mod10.vhd" in Library work.
+Architecture arch of Entity c_mod10 is up to date.
+Compiling vhdl file "C:/hlocal/TOC/Lab5/debouncer.vhd" in Library work.
+Architecture debouncerarch of Entity debouncer is up to date.
+Compiling vhdl file "C:/hlocal/TOC/Lab5/controller.vhd" in Library work.
+ERROR:HDLParsers:3312 - "C:/hlocal/TOC/Lab5/controller.vhd" Line 41. Undefined symbol 'ld_ra'.
+ERROR:HDLParsers:1209 - "C:/hlocal/TOC/Lab5/controller.vhd" Line 41. ld_ra: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/hlocal/TOC/Lab5/controller.vhd" Line 42. Undefined symbol 'ld_rb'.
+ERROR:HDLParsers:1209 - "C:/hlocal/TOC/Lab5/controller.vhd" Line 42. ld_rb: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/hlocal/TOC/Lab5/controller.vhd" Line 43. Undefined symbol 'ld_rn'.
+ERROR:HDLParsers:1209 - "C:/hlocal/TOC/Lab5/controller.vhd" Line 43. ld_rn: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/hlocal/TOC/Lab5/controller.vhd" Line 44. Undefined symbol 'ld_racc'.
+ERROR:HDLParsers:1209 - "C:/hlocal/TOC/Lab5/controller.vhd" Line 44. ld_racc: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/hlocal/TOC/Lab5/controller.vhd" Line 45. Undefined symbol 'mux_n'.
+ERROR:HDLParsers:1209 - "C:/hlocal/TOC/Lab5/controller.vhd" Line 45. mux_n: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/hlocal/TOC/Lab5/controller.vhd" Line 46. Undefined symbol 'mux_acc'.
+ERROR:HDLParsers:1209 - "C:/hlocal/TOC/Lab5/controller.vhd" Line 46. mux_acc: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/hlocal/TOC/Lab5/controller.vhd" Line 47. Undefined symbol 'mux_a'.
+ERROR:HDLParsers:1209 - "C:/hlocal/TOC/Lab5/controller.vhd" Line 47. mux_a: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/hlocal/TOC/Lab5/controller.vhd" Line 48. Undefined symbol 'mux_b'.
+ERROR:HDLParsers:1209 - "C:/hlocal/TOC/Lab5/controller.vhd" Line 48. mux_b: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/hlocal/TOC/Lab5/controller.vhd" Line 51. Undefined symbol 'zero'.
+ERROR:HDLParsers:3312 - "C:/hlocal/TOC/Lab5/controller.vhd" Line 54. Undefined symbol 'equal_1'.
+ERROR:HDLParsers:3312 - "C:/hlocal/TOC/Lab5/controller.vhd" Line 69. Undefined symbol 'mux_add'.
+ERROR:HDLParsers:1209 - "C:/hlocal/TOC/Lab5/controller.vhd" Line 69. mux_add: Undefined symbol (last report in this block)
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> 
+
+Total memory usage is 4509668 kilobytes
+
+Number of errors   :   20 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,5 @@
+vhdl work "sequence_generator.vhd"
+vhdl work "freq_divider.vhd"
+vhdl work "definitions.vhd"
+vhdl work "C_mod10.vhd"
+vhdl work "data_path.vhd"

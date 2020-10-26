@@ -1,0 +1,5 @@
+set -tmpdir "C:/hlocal/TOC/Lab2/xst/projnav.tmp"
+set -xsthdpdir "C:/hlocal/TOC/Lab2/xst"
+elaborate
+-ifn comparator.prj
+-ifmt mixed

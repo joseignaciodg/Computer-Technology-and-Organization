@@ -1,0 +1,15 @@
+EN asm_multiplier NULL C:/hlocal/TOC/Lab4/ASM_multiplier.vhd sub00/vhpl11 1542133532
+EN adder NULL "C:/hlocal/TOC/Lab4/New folder/adder_std.vhd" sub00/vhpl00 1542133521
+AR debouncer debouncerarch C:/hlocal/TOC/Lab4/L2/debouncer.vhd sub00/vhpl14 1542133919
+EN adder_sub NULL "C:/hlocal/TOC/Lab4/New folder/adder_sub_std.vhd" sub00/vhpl05 1542133526
+AR adder_sub rtl "C:/hlocal/TOC/Lab4/New folder/adder_sub_std.vhd" sub00/vhpl06 1542133527
+EN data_path NULL "C:/hlocal/TOC/Lab4/New folder/data_path.vhd" sub00/vhpl07 1542133530
+AR adder rtl "C:/hlocal/TOC/Lab4/New folder/adder_std.vhd" sub00/vhpl01 1542133522
+PH definitions NULL "C:/hlocal/TOC/Lab4/New folder/definitions.vhd" sub00/vhpl02 1542133523
+AR data_path arch_dp "C:/hlocal/TOC/Lab4/New folder/data_path.vhd" sub00/vhpl08 1542133531
+AR controller arch_controller "C:/hlocal/TOC/Lab4/New folder/controller.vhd" sub00/vhpl10 1542133529
+AR asynch_reg arch_reg "C:/hlocal/TOC/Lab4/New folder/asynch_reg.vhd" sub00/vhpl04 1542133525
+EN asynch_reg NULL "C:/hlocal/TOC/Lab4/New folder/asynch_reg.vhd" sub00/vhpl03 1542133524
+EN debouncer NULL C:/hlocal/TOC/Lab4/L2/debouncer.vhd sub00/vhpl13 1542133918
+EN controller NULL "C:/hlocal/TOC/Lab4/New folder/controller.vhd" sub00/vhpl09 1542133528
+AR asm_multiplier arch_asm_mult C:/hlocal/TOC/Lab4/ASM_multiplier.vhd sub00/vhpl12 1542133533

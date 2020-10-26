@@ -1,0 +1,7 @@
+vhdtdtfi -lib work mult8bits.vhd -prj Lab3 -o mult8bits.spl -module mult8bits -template C:/Xilinx/14.1/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 mult8bits.spl C:/hlocal/TOC/Lab3/mult8bits.sym 
+xst -intstyle ise -ifn "C:/hlocal/TOC/Lab3/mult8bits.xst" -ofn "C:/hlocal/TOC/Lab3/mult8bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-5 mult8bits.ngc mult8bits.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o mult8bits_map.ncd mult8bits.ngd mult8bits.pcf 
+par -w -intstyle ise -ol high -t 1 mult8bits_map.ncd mult8bits.ncd mult8bits.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mult8bits.twx mult8bits.ncd -o mult8bits.twr mult8bits.pcf 

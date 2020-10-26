@@ -1,0 +1,3 @@
+vhdl isim_temp "register8bits.vhd"
+vhdl isim_temp "adder8bits.vhd"
+vhdl isim_temp "Mult_with_Adders.vhd"

@@ -1,0 +1,6 @@
+vhdl work "C:\hlocal\TOC\Lab2\register8bits.vhd"
+vhdl work "C:\hlocal\TOC\Lab2\FSM.vhd"
+vhdl work "C:\hlocal\TOC\Lab2\debouncer.vhd"
+vhdl work "C:\hlocal\TOC\Lab2\conv_7seg.vhd"
+vhdl work "C:\hlocal\TOC\Lab2\comparator.vhd"
+vhdl work "C:\hlocal\TOC\Lab2\Module.vhd"

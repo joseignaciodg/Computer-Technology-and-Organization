@@ -1,0 +1,61 @@
+V3 45
+FL C:/hlocal/Lab5/controller.vhd 2018/12/05.14:55:16 P.15xf
+EN work/controller 1544018741 FL C:/hlocal/Lab5/controller.vhd \
+      PB ieee/std_logic_1164 1335251622 PH work/definitions 1544018734
+AR work/controller/arch_controller 1544018742 \
+      FL C:/hlocal/Lab5/controller.vhd EN work/controller 1544018741
+FL C:/hlocal/Lab5/conv_7seg.vhd 2018/12/02.18:59:20 P.15xf
+EN work/conv_7seg 1544018747 FL C:/hlocal/Lab5/conv_7seg.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/conv_7seg/Behavioral 1544018748 \
+      FL C:/hlocal/Lab5/conv_7seg.vhd EN work/conv_7seg 1544018747
+FL C:/hlocal/Lab5/C_mod10.vhd 2018/12/05.10:51:16 P.15xf
+EN work/C_mod10 1544018737 FL C:/hlocal/Lab5/C_mod10.vhd PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627
+AR work/C_mod10/ARCH 1544018738 \
+      FL C:/hlocal/Lab5/C_mod10.vhd EN work/C_mod10 1544018737
+FL C:/hlocal/Lab5/data_path.vhd 2018/12/05.14:55:56 P.15xf
+EN work/data_path 1544018743 FL C:/hlocal/Lab5/data_path.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627 \
+      PH work/definitions 1544018734
+AR work/data_path/arch_dp 1544018744 \
+      FL C:/hlocal/Lab5/data_path.vhd EN work/data_path 1544018743 CP freq_divider \
+      CP C_mod10 CP sequence_generator
+FL C:/hlocal/Lab5/definitions.vhd 2018/12/05.14:56:20 P.15xf
+PH work/definitions 1544018734 FL C:/hlocal/Lab5/definitions.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627
+FL C:/hlocal/Lab5/freq_divider.vhd 2018/12/05.11:08:08 P.15xf
+EN work/freq_divider 1544018735 FL C:/hlocal/Lab5/freq_divider.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627
+AR work/freq_divider/divider_arch 1544018736 \
+      FL C:/hlocal/Lab5/freq_divider.vhd EN work/freq_divider 1544018735
+FL C:/hlocal/Lab5/Module.vhd 2018/12/05.14:12:24 P.15xf
+EN work/Module 1544018749 FL C:/hlocal/Lab5/Module.vhd PB ieee/std_logic_1164 1335251622
+AR work/Module/Behavioral 1544018750 \
+      FL C:/hlocal/Lab5/Module.vhd EN work/Module 1544018749 CP slot_machine \
+      CP conv_7seg
+FL C:/hlocal/Lab5/sequence_generator.vhd 2018/12/05.12:07:06 P.15xf
+EN work/sequence_generator 1544018739 FL C:/hlocal/Lab5/sequence_generator.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/sequence_generator/Behavioral 1544018740 \
+      FL C:/hlocal/Lab5/sequence_generator.vhd EN work/sequence_generator 1544018739
+FL C:/hlocal/Lab5/slot_machine.vhd 2018/12/05.14:37:17 P.15xf
+EN work/slot_machine 1544018745 FL C:/hlocal/Lab5/slot_machine.vhd \
+      PB ieee/std_logic_1164 1335251622 PH work/definitions 1544018734
+AR work/slot_machine/Structural 1544018746 \
+      FL C:/hlocal/Lab5/slot_machine.vhd EN work/slot_machine 1544018745 \
+      CP controller CP data_path
+FL C:/hlocal/TOC/Lab5/controller.vhd 2018/12/05.14:09:17 P.15xf
+FL C:/hlocal/TOC/Lab5/conv_7seg.vhd 2018/12/02.18:59:19 P.15xf
+FL C:/hlocal/TOC/Lab5/C_mod10.vhd 2018/12/05.10:51:14 P.15xf
+FL C:/hlocal/TOC/Lab5/data_path.vhd 2018/12/05.13:36:00 P.15xf
+FL C:/hlocal/TOC/Lab5/debouncer.vhd 2018/12/02.18:29:10 P.15xf
+EN work/debouncer 1544015555 FL C:/hlocal/TOC/Lab5/debouncer.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/STD_LOGIC_UNSIGNED 1335251625
+AR work/debouncer/debouncerArch 1544015556 \
+      FL C:/hlocal/TOC/Lab5/debouncer.vhd EN work/debouncer 1544015555
+FL C:/hlocal/TOC/Lab5/definitions.vhd 2018/12/05.13:36:00 P.15xf
+FL C:/hlocal/TOC/Lab5/freq_divider.vhd 2018/12/05.11:08:06 P.15xf
+FL C:/hlocal/TOC/Lab5/Module.vhd 2018/12/05.14:12:23 P.15xf
+FL C:/hlocal/TOC/Lab5/sequence_generator.vhd 2018/12/05.12:07:05 P.15xf
+FL C:/hlocal/TOC/Lab5/slot_machine.vhd 2018/12/05.14:10:48 P.15xf

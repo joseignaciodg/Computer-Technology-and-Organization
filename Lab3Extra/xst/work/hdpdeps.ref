@@ -1,0 +1,17 @@
+V3 11
+FL C:/hlocal/Lab3/adder8bits.vhd 2018/10/30.13:10:30 P.15xf
+EN work/adder8b 1540991091 FL C:/hlocal/Lab3/adder8bits.vhd PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627
+AR work/adder8b/rtl 1540991092 \
+      FL C:/hlocal/Lab3/adder8bits.vhd EN work/adder8b 1540991091
+FL C:/hlocal/Lab3/Mult_with_Adders.vhd 2018/10/31.14:04:47 P.15xf
+EN work/Mult_with_Adders 1540991095 FL C:/hlocal/Lab3/Mult_with_Adders.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627
+AR work/Mult_with_Adders/Behavioral 1540991096 \
+      FL C:/hlocal/Lab3/Mult_with_Adders.vhd EN work/Mult_with_Adders 1540991095 \
+      CP adder8b CP register8bits
+FL C:/hlocal/Lab3/register8bits.vhd 2018/10/31.13:51:21 P.15xf
+EN work/register8bits 1540991093 FL C:/hlocal/Lab3/register8bits.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/register8bits/ARCH_ASYN 1540991094 \
+      FL C:/hlocal/Lab3/register8bits.vhd EN work/register8bits 1540991093

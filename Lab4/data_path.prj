@@ -1,0 +1,5 @@
+vhdl work "New folder/adder_std.vhd"
+vhdl work "New folder/definitions.vhd"
+vhdl work "New folder/asynch_reg.vhd"
+vhdl work "New folder/adder_sub_std.vhd"
+vhdl work "New folder/data_path.vhd"

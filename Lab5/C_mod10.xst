@@ -1,0 +1,5 @@
+set -tmpdir "C:/hlocal/TOC/Lab5/xst/projnav.tmp"
+set -xsthdpdir "C:/hlocal/TOC/Lab5/xst"
+elaborate
+-ifn C_mod10.prj
+-ifmt mixed

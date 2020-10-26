@@ -1,0 +1,35 @@
+//! **************************************************************************
+// Written by: Map P.15xf on Wed Dec 05 15:06:02 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Result1<1>" LOCATE = SITE "M4" LEVEL 1;
+COMP "stop" LOCATE = SITE "A13" LEVEL 1;
+COMP "Result1<2>" LOCATE = SITE "P1" LEVEL 1;
+COMP "Result1<3>" LOCATE = SITE "N3" LEVEL 1;
+COMP "Result2<0>" LOCATE = SITE "E2" LEVEL 1;
+COMP "Result1<4>" LOCATE = SITE "M15" LEVEL 1;
+COMP "Result2<1>" LOCATE = SITE "E1" LEVEL 1;
+COMP "Result1<5>" LOCATE = SITE "H13" LEVEL 1;
+COMP "Result2<2>" LOCATE = SITE "F3" LEVEL 1;
+COMP "Result1<6>" LOCATE = SITE "G16" LEVEL 1;
+COMP "Result2<3>" LOCATE = SITE "F2" LEVEL 1;
+COMP "Result2<4>" LOCATE = SITE "G4" LEVEL 1;
+COMP "Result2<5>" LOCATE = SITE "G3" LEVEL 1;
+COMP "Result2<6>" LOCATE = SITE "G1" LEVEL 1;
+COMP "leds<0>" LOCATE = SITE "L5" LEVEL 1;
+COMP "leds<1>" LOCATE = SITE "N2" LEVEL 1;
+COMP "leds<2>" LOCATE = SITE "M3" LEVEL 1;
+COMP "leds<3>" LOCATE = SITE "N1" LEVEL 1;
+COMP "leds<4>" LOCATE = SITE "T13" LEVEL 1;
+COMP "leds<5>" LOCATE = SITE "L15" LEVEL 1;
+COMP "leds<6>" LOCATE = SITE "J13" LEVEL 1;
+COMP "leds<7>" LOCATE = SITE "H15" LEVEL 1;
+COMP "leds<8>" LOCATE = SITE "J16" LEVEL 1;
+COMP "leds<9>" LOCATE = SITE "J14" LEVEL 1;
+COMP "start" LOCATE = SITE "E11" LEVEL 1;
+COMP "reset" LOCATE = SITE "H4" LEVEL 1;
+COMP "Result1<0>" LOCATE = SITE "H14" LEVEL 1;
+NET "clock_BUFGP/IBUFG" BEL "clock_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

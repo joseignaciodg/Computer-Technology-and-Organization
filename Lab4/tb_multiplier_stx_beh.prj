@@ -1,0 +1,8 @@
+vhdl isim_temp "New folder/adder_std.vhd"
+vhdl isim_temp "New folder/definitions.vhd"
+vhdl isim_temp "New folder/asynch_reg.vhd"
+vhdl isim_temp "New folder/adder_sub_std.vhd"
+vhdl isim_temp "New folder/data_path.vhd"
+vhdl isim_temp "New folder/controller.vhd"
+vhdl isim_temp "ASM_multiplier.vhd"
+vhdl isim_temp "tb_multiplier.vhd"

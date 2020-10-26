@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "C:/hlocal/Lab3/Mult_with_Adders.xst" -ofn "C:/hlocal/Lab3/Mult_with_Adders.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Mult_with_Adders.ngc Mult_with_Adders_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1000-ft256-5 Mult_with_Adders.ngc Mult_with_Adders.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o Mult_with_Adders_map.ncd Mult_with_Adders.ngd Mult_with_Adders.pcf 
+par -w -intstyle ise -ol high -t 1 Mult_with_Adders_map.ncd Mult_with_Adders.ncd Mult_with_Adders.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Mult_with_Adders.twx Mult_with_Adders.ncd -o Mult_with_Adders.twr Mult_with_Adders.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f Mult_with_Adders.ut Mult_with_Adders.ncd 
+xst -intstyle ise -ifn "C:/hlocal/Lab3/Mult_with_Adders.xst" -ofn "C:/hlocal/Lab3/Mult_with_Adders.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Mult_with_Adders.ngc Mult_with_Adders_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1000-ft256-5 Mult_with_Adders.ngc Mult_with_Adders.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o Mult_with_Adders_map.ncd Mult_with_Adders.ngd Mult_with_Adders.pcf 
+par -w -intstyle ise -ol high -t 1 Mult_with_Adders_map.ncd Mult_with_Adders.ncd Mult_with_Adders.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Mult_with_Adders.twx Mult_with_Adders.ncd -o Mult_with_Adders.twr Mult_with_Adders.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f Mult_with_Adders.ut Mult_with_Adders.ncd 
+xst -intstyle ise -ifn "C:/hlocal/Lab3/Mult_with_Adders.xst" -ofn "C:/hlocal/Lab3/Mult_with_Adders.syr" 
+xst -intstyle ise -ifn "C:/hlocal/Lab3/Mult_with_Adders.xst" -ofn "C:/hlocal/Lab3/Mult_with_Adders.syr" 

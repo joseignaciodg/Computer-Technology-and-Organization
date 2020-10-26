@@ -1,0 +1,5 @@
+set -tmpdir "C:/hlocal/TOC/Lab4/xst/projnav.tmp"
+set -xsthdpdir "C:/hlocal/TOC/Lab4/xst"
+elaborate
+-ifn ASM_multiplier.prj
+-ifmt mixed

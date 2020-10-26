@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/hlocal/TOC/Lab3/tb_mult8bits_isim_beh.exe" -prj "C:/hlocal/TOC/Lab3/tb_mult8bits_beh.prj" "work.tb_mult8bits" 

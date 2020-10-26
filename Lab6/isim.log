@@ -1,0 +1,46 @@
+ISim log file
+Running: C:\hlocal\TOC\Lab6\TestBenchMIPSMulticycle_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/hlocal/TOC/Lab6/TestBenchMIPSMulticycle_isim_beh.wdb 
+ISim P.15xf (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /testbenchmipsmulticycle/uut/DP/register_bank/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /testbenchmipsmulticycle/uut/DP/register_bank/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /testbenchmipsmulticycle/uut/DP/ALU_i/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Finished circuit initialization process.
+at 0 ps, Instance /testbenchmipsmulticycle/uut/DP/ALU_i/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /testbenchmipsmulticycle/uut/DP/ALU_i/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 850 ns(6), Instance /testbenchmipsmulticycle/uut/DP/ALU_i/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+# restart
+# run 1.00us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /testbenchmipsmulticycle/uut/DP/register_bank/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /testbenchmipsmulticycle/uut/DP/register_bank/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /testbenchmipsmulticycle/uut/DP/ALU_i/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Finished circuit initialization process.
+at 0 ps, Instance /testbenchmipsmulticycle/uut/DP/ALU_i/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /testbenchmipsmulticycle/uut/DP/ALU_i/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 850 ns(6), Instance /testbenchmipsmulticycle/uut/DP/ALU_i/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+# restart
+# run 1.00us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /testbenchmipsmulticycle/uut/DP/register_bank/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /testbenchmipsmulticycle/uut/DP/register_bank/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /testbenchmipsmulticycle/uut/DP/ALU_i/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Finished circuit initialization process.
+at 0 ps, Instance /testbenchmipsmulticycle/uut/DP/ALU_i/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /testbenchmipsmulticycle/uut/DP/ALU_i/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 850 ns(6), Instance /testbenchmipsmulticycle/uut/DP/ALU_i/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+# run 1.00us
+at 1350 ns(5), Instance /testbenchmipsmulticycle/uut/DP/ALU_i/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 1350 ns(6), Instance /testbenchmipsmulticycle/uut/DP/ALU_i/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 1450 ns(6), Instance /testbenchmipsmulticycle/uut/DP/ALU_i/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 1650 ns(8), Instance /testbenchmipsmulticycle/uut/DP/ALU_i/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 1850 ns(6), Instance /testbenchmipsmulticycle/uut/DP/ALU_i/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 1950 ns(6), Instance /testbenchmipsmulticycle/uut/DP/ALU_i/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE

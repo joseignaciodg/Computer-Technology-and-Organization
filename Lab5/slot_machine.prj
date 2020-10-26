@@ -1,0 +1,6 @@
+vhdl work "definitions.vhd"
+vhdl work "C_mod10.vhd"
+vhdl work "debouncer.vhd"
+vhdl work "data_path.vhd"
+vhdl work "controller.vhd"
+vhdl work "slot_machine.vhd"

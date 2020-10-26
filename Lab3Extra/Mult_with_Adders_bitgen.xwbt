@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\hlocal\Lab3\Mult_with_Adders.ncd
+OUTFILE=C:\hlocal\Lab3\Mult_with_Adders.bit
+FAMILY=Spartan3
+PART=xc3s1000-5ft256
+WORKINGDIR=C:\hlocal\Lab3
+LICENSE=ISE
+USER_INFO=210699396_1777489394_210552810_807

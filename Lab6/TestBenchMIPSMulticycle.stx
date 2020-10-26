@@ -1,0 +1,56 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/hlocal/TOC/Lab6/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to C:/hlocal/TOC/Lab6/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/hlocal/TOC/Lab6/BlockRam.vhd" in Library work.
+Architecture behavioral of Entity blockram is up to date.
+Compiling vhdl file "C:/hlocal/TOC/Lab6/register.vhd" in Library work.
+Architecture regarch of Entity reg is up to date.
+Compiling vhdl file "C:/hlocal/TOC/Lab6/multiplexer2to1.vhd" in Library work.
+Architecture multiplexer2to1arch of Entity multiplexer2to1 is up to date.
+Compiling vhdl file "C:/hlocal/TOC/Lab6/memory.vhd" in Library work.
+Architecture memory_arch of Entity memory is up to date.
+Compiling vhdl file "C:/hlocal/TOC/Lab6/multiplexer4to1.vhd" in Library work.
+Architecture multiplexer4to1arch of Entity multiplexer4to1 is up to date.
+Compiling vhdl file "C:/hlocal/TOC/Lab6/registerBank.vhd" in Library work.
+Architecture registerbankarch of Entity registerbank is up to date.
+Compiling vhdl file "C:/hlocal/TOC/Lab6/ALU.vhd" in Library work.
+Architecture aluarch of Entity alu is up to date.
+Compiling vhdl file "C:/hlocal/TOC/Lab6/controlUnit.vhd" in Library work.
+Architecture controlunitarch of Entity controlunit is up to date.
+Compiling vhdl file "C:/hlocal/TOC/Lab6/dataPath.vhd" in Library work.
+Architecture datapatharch of Entity datapath is up to date.
+Compiling vhdl file "C:/hlocal/TOC/Lab6/MIPSMulticycle.vhd" in Library work.
+Architecture mipsmulticyclearch of Entity mipsmulticycle is up to date.
+Compiling vhdl file "C:/hlocal/TOC/Lab6/TestBenchMIPSMulticycle.vhd" in Library work.
+ERROR:HDLParsers:1015 - "C:/hlocal/TOC/Lab6/TestBenchMIPSMulticycle.vhd" Line 38. Wait for statement unsupported.
+ERROR:HDLParsers:1015 - "C:/hlocal/TOC/Lab6/TestBenchMIPSMulticycle.vhd" Line 40. Wait for statement unsupported.
+ERROR:HDLParsers:1015 - "C:/hlocal/TOC/Lab6/TestBenchMIPSMulticycle.vhd" Line 49. Wait for statement unsupported.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.70 secs
+ 
+--> 
+
+Total memory usage is 4509680 kilobytes
+
+Number of errors   :    3 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,556 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: Module.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Module.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Module"
+Output Format                      : NGC
+Target Device                      : xc3s1000-5-ft256
+
+---- Source Options
+Top Module Name                    : Module
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/hlocal/TOC/Lab2/register8bits.vhd" in Library work.
+Architecture arch_asyn of Entity register8bits is up to date.
+Compiling vhdl file "C:/hlocal/TOC/Lab2/debouncer.vhd" in Library work.
+Architecture debouncerarch of Entity debouncer is up to date.
+Compiling vhdl file "C:/hlocal/TOC/Lab2/conv_7seg.vhd" in Library work.
+Architecture behavioral of Entity conv_7seg is up to date.
+Compiling vhdl file "C:/hlocal/TOC/Lab2/comparator.vhd" in Library work.
+Architecture behavioral of Entity comparator is up to date.
+Compiling vhdl file "C:/hlocal/TOC/Lab2/FSM.vhd" in Library work.
+Architecture behavioral of Entity fsm is up to date.
+Compiling vhdl file "C:/hlocal/TOC/Lab2/Module.vhd" in Library work.
+Architecture structural of Entity module is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Module> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <register8bits> in library <work> (architecture <arch_asyn>).
+
+Analyzing hierarchy for entity <debouncer> in library <work> (architecture <debouncerarch>).
+
+Analyzing hierarchy for entity <conv_7seg> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <comparator> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FSM> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Module> in library <work> (Architecture <structural>).
+Entity <Module> analyzed. Unit <Module> generated.
+
+Analyzing Entity <register8bits> in library <work> (Architecture <arch_asyn>).
+Entity <register8bits> analyzed. Unit <register8bits> generated.
+
+Analyzing Entity <debouncer> in library <work> (Architecture <debouncerarch>).
+Entity <debouncer> analyzed. Unit <debouncer> generated.
+
+Analyzing Entity <conv_7seg> in library <work> (Architecture <behavioral>).
+Entity <conv_7seg> analyzed. Unit <conv_7seg> generated.
+
+Analyzing Entity <comparator> in library <work> (Architecture <behavioral>).
+Entity <comparator> analyzed. Unit <comparator> generated.
+
+Analyzing Entity <FSM> in library <work> (Architecture <behavioral>).
+Entity <FSM> analyzed. Unit <FSM> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <register8bits>.
+    Related source file is "C:/hlocal/TOC/Lab2/register8bits.vhd".
+    Found 8-bit register for signal <O>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <register8bits> synthesized.
+
+
+Synthesizing Unit <debouncer>.
+    Related source file is "C:/hlocal/TOC/Lab2/debouncer.vhd".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <aux1>.
+    Found 20-bit up counter for signal <count>.
+    Found 1-bit register for signal <xSync>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred   2 D-type flip-flop(s).
+Unit <debouncer> synthesized.
+
+
+Synthesizing Unit <conv_7seg>.
+    Related source file is "C:/hlocal/TOC/Lab2/conv_7seg.vhd".
+    Found 16x7-bit ROM for signal <display>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <conv_7seg> synthesized.
+
+
+Synthesizing Unit <comparator>.
+    Related source file is "C:/hlocal/TOC/Lab2/comparator.vhd".
+    Found 8-bit comparator equal for signal <eq$cmp_eq0000> created at line 11.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <comparator> synthesized.
+
+
+Synthesizing Unit <FSM>.
+    Related source file is "C:/hlocal/TOC/Lab2/FSM.vhd".
+    Using one-hot encoding for signal <STATE>.
+WARNING:Xst:737 - Found 10-bit latch for signal <led>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 5-bit latch for signal <NEXT_STATE>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 5-bit register for signal <STATE>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <FSM> synthesized.
+
+
+Synthesizing Unit <Module>.
+    Related source file is "C:/hlocal/TOC/Lab2/Module.vhd".
+WARNING:Xst:646 - Signal <xDeb_signal> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <xDebRisin_signal> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Module> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 1
+ 20-bit up counter                                     : 1
+# Registers                                            : 4
+ 1-bit register                                        : 2
+ 5-bit register                                        : 1
+ 8-bit register                                        : 1
+# Latches                                              : 2
+ 10-bit latch                                          : 1
+ 5-bit latch                                           : 1
+# Comparators                                          : 1
+ 8-bit comparator equal                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <mod_debouncer/state/FSM> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 1
+ 20-bit up counter                                     : 1
+# Registers                                            : 15
+ Flip-Flops                                            : 15
+# Latches                                              : 2
+ 10-bit latch                                          : 1
+ 5-bit latch                                           : 1
+# Comparators                                          : 1
+ 8-bit comparator equal                                : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <9> in Unit <LPM_LATCH_1> is equivalent to the following 9 FFs/Latches, which will be removed : <8> <7> <6> <5> <4> <3> <2> <1> <0> 
+
+Optimizing unit <Module> ...
+
+Optimizing unit <register8bits> ...
+
+Optimizing unit <debouncer> ...
+
+Optimizing unit <FSM> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Module, actual ratio is 0.
+FlipFlop mod_debouncer/xSync has been replicated 1 time(s)
+Latch mod_FSM/led_9 has been replicated 9 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 38
+ Flip-Flops                                            : 38
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Module.ngr
+Top Level Output File Name         : Module
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 28
+
+Cell Usage :
+# BELS                             : 100
+#      GND                         : 1
+#      INV                         : 2
+#      LUT2                        : 4
+#      LUT3                        : 9
+#      LUT4                        : 38
+#      MUXCY                       : 24
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 20
+# FlipFlops/Latches                : 53
+#      FD                          : 4
+#      FDC                         : 1
+#      FDCE                        : 13
+#      FDP                         : 3
+#      FDPE                        : 8
+#      FDRE                        : 8
+#      FDS                         : 1
+#      LD_1                        : 15
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 27
+#      IBUF                        : 10
+#      OBUF                        : 17
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1000ft256-5 
+
+ Number of Slices:                       31  out of   7680     0%  
+ Number of Slice Flip Flops:             43  out of  15360     0%  
+ Number of 4 input LUTs:                 53  out of  15360     0%  
+ Number of IOs:                          28
+ Number of bonded IOBs:                  28  out of    173    16%  
+    IOB Flip Flops:                      10
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------+---------------------------+-------+
+Clock Signal                             | Clock buffer(FF name)     | Load  |
+-----------------------------------------+---------------------------+-------+
+clock                                    | BUFGP                     | 38    |
+mod_FSM/led_or0000(mod_FSM/led_or00001:O)| NONE(*)(mod_FSM/led_9)    | 10    |
+mod_FSM/STATE_4                          | NONE(mod_FSM/NEXT_STATE_4)| 5     |
+-----------------------------------------+---------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------------+-------------------------+-------+
+Control Signal                                         | Buffer(FF name)         | Load  |
+-------------------------------------------------------+-------------------------+-------+
+mod_FSM/NEXT_STATE<0>11(mod_debouncer/rst_inv1_INV_0:O)| NONE(mod_debouncer/aux1)| 25    |
+-------------------------------------------------------+-------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 6.077ns (Maximum Frequency: 164.551MHz)
+   Minimum input arrival time before clock: 5.733ns
+   Maximum output required time after clock: 7.984ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 6.077ns (frequency: 164.551MHz)
+  Total number of paths / destination ports: 1410 / 53
+-------------------------------------------------------------------------
+Delay:               6.077ns (Levels of Logic = 7)
+  Source:            mod_debouncer/count_7 (FF)
+  Destination:       mod_debouncer/count_19 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: mod_debouncer/count_7 to mod_debouncer/count_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.626   1.040  mod_debouncer/count_7 (mod_debouncer/count_7)
+     LUT4:I0->O            1   0.479   0.000  mod_debouncer/timerEnd_cmp_eq0000_wg_lut<0> (mod_debouncer/timerEnd_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  mod_debouncer/timerEnd_cmp_eq0000_wg_cy<0> (mod_debouncer/timerEnd_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  mod_debouncer/timerEnd_cmp_eq0000_wg_cy<1> (mod_debouncer/timerEnd_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  mod_debouncer/timerEnd_cmp_eq0000_wg_cy<2> (mod_debouncer/timerEnd_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  mod_debouncer/timerEnd_cmp_eq0000_wg_cy<3> (mod_debouncer/timerEnd_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           2   0.246   0.768  mod_debouncer/timerEnd_cmp_eq0000_wg_cy<4> (mod_debouncer/timerEnd)
+     LUT4:I3->O           20   0.479   1.313  mod_debouncer/count_not00011 (mod_debouncer/count_not0001)
+     FDCE:CE                   0.524          mod_debouncer/count_1
+    ----------------------------------------
+    Total                      6.077ns (2.955ns logic, 3.122ns route)
+                                       (48.6% logic, 51.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 22 / 22
+-------------------------------------------------------------------------
+Offset:              3.910ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       mod_FSM/STATE_0 (FF)
+  Destination Clock: clock rising
+
+  Data Path: reset to mod_FSM/STATE_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   0.715   0.994  reset_IBUF (reset_IBUF)
+     INV:I->O             26   0.479   1.546  mod_debouncer/rst_inv1_INV_0 (mod_FSM/NEXT_STATE<0>11)
+     FDS:D                     0.176          mod_FSM/STATE_0
+    ----------------------------------------
+    Total                      3.910ns (1.370ns logic, 2.540ns route)
+                                       (35.0% logic, 65.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mod_FSM/STATE_4'
+  Total number of paths / destination ports: 32 / 4
+-------------------------------------------------------------------------
+Offset:              5.733ns (Levels of Logic = 5)
+  Source:            SWITCH<0> (PAD)
+  Destination:       mod_FSM/NEXT_STATE_0 (LATCH)
+  Destination Clock: mod_FSM/STATE_4 rising
+
+  Data Path: SWITCH<0> to mod_FSM/NEXT_STATE_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.715   1.040  SWITCH_0_IBUF (SWITCH_0_IBUF)
+     LUT4:I0->O            1   0.479   0.976  eq_signal826 (eq_signal826)
+     LUT4:I0->O            4   0.479   1.074  eq_signal8136 (eq_signal)
+     LUT4:I0->O            1   0.479   0.000  mod_FSM/NEXT_STATE_mux0004<0>1 (mod_FSM/NEXT_STATE_mux0004<0>1)
+     MUXF5:I1->O           1   0.314   0.000  mod_FSM/NEXT_STATE_mux0004<0>_f5 (mod_FSM/NEXT_STATE_mux0004<0>)
+     LD_1:D                    0.176          mod_FSM/NEXT_STATE_0
+    ----------------------------------------
+    Total                      5.733ns (2.642ns logic, 3.091ns route)
+                                       (46.1% logic, 53.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 23 / 7
+-------------------------------------------------------------------------
+Offset:              7.984ns (Levels of Logic = 2)
+  Source:            mod_FSM/STATE_4 (FF)
+  Destination:       DISPLAY<6> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: mod_FSM/STATE_4 to DISPLAY<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              13   0.626   1.289  mod_FSM/STATE_4 (mod_FSM/STATE_4)
+     LUT3:I0->O            1   0.479   0.681  mod_conv_7seg/Mrom_display61 (DISPLAY_6_OBUF)
+     OBUF:I->O                 4.909          DISPLAY_6_OBUF (DISPLAY<6>)
+    ----------------------------------------
+    Total                      7.984ns (6.014ns logic, 1.970ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mod_FSM/led_or0000'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              6.141ns (Levels of Logic = 1)
+  Source:            mod_FSM/led_9_1 (LATCH)
+  Destination:       LED<9> (PAD)
+  Source Clock:      mod_FSM/led_or0000 rising
+
+  Data Path: mod_FSM/led_9_1 to LED<9>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD_1:G->Q             1   0.551   0.681  mod_FSM/led_9_1 (mod_FSM/led_9_1)
+     OBUF:I->O                 4.909          LED_9_OBUF (LED<9>)
+    ----------------------------------------
+    Total                      6.141ns (5.460ns logic, 0.681ns route)
+                                       (88.9% logic, 11.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.09 secs
+ 
+--> 
+
+Total memory usage is 4546196 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

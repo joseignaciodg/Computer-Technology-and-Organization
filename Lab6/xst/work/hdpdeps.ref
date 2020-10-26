@@ -1,0 +1,58 @@
+V3 44
+FL C:/hlocal/TOC/Lab6/ALU.vhd 2018/12/04.22:04:11 P.15xf
+EN work/ALU 1545215051 FL C:/hlocal/TOC/Lab6/ALU.vhd PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627
+AR work/ALU/ALUArch 1545215052 \
+      FL C:/hlocal/TOC/Lab6/ALU.vhd EN work/ALU 1545215051
+FL C:/hlocal/TOC/Lab6/BlockRam.vhd 2018/12/19.11:22:59 P.15xf
+EN work/BlockRam 1545215039 FL C:/hlocal/TOC/Lab6/BlockRam.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627
+AR work/BlockRam/Behavioral 1545215040 \
+      FL C:/hlocal/TOC/Lab6/BlockRam.vhd EN work/BlockRam 1545215039
+FL C:/hlocal/TOC/Lab6/controlUnit.vhd 2018/12/19.11:12:24 P.15xf
+EN work/controlUnit 1545215053 FL C:/hlocal/TOC/Lab6/controlUnit.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/controlUnit/controlUnitArch 1545215054 \
+      FL C:/hlocal/TOC/Lab6/controlUnit.vhd EN work/controlUnit 1545215053
+FL C:/hlocal/TOC/Lab6/dataPath.vhd 2018/12/19.11:16:26 P.15xf
+EN work/dataPath 1545215055 FL C:/hlocal/TOC/Lab6/dataPath.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/dataPath/dataPathArch 1545215056 \
+      FL C:/hlocal/TOC/Lab6/dataPath.vhd EN work/dataPath 1545215055 CP reg \
+      CP multiplexer2to1 CP memory CP multiplexer4to1 CP registerBank CP ALU
+FL C:/hlocal/TOC/Lab6/memory.vhd 2018/12/04.21:52:16 P.15xf
+EN work/memory 1545215045 FL C:/hlocal/TOC/Lab6/memory.vhd PB ieee/std_logic_1164 1335251622
+AR work/memory/memory_Arch 1545215046 \
+      FL C:/hlocal/TOC/Lab6/memory.vhd EN work/memory 1545215045 CP BlockRam
+FL C:/hlocal/TOC/Lab6/MIPSMulticycle.vhd 2018/12/19.11:12:34 P.15xf
+EN work/MIPSMulticycle 1545215057 FL C:/hlocal/TOC/Lab6/MIPSMulticycle.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/MIPSMulticycle/MIPSMulticycleArch 1545215058 \
+      FL C:/hlocal/TOC/Lab6/MIPSMulticycle.vhd EN work/MIPSMulticycle 1545215057 \
+      CP controlUnit CP dataPath
+FL C:/hlocal/TOC/Lab6/multiplexer2to1.vhd 2018/12/04.15:43:12 P.15xf
+EN work/multiplexer2to1 1545215043 FL C:/hlocal/TOC/Lab6/multiplexer2to1.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/multiplexer2to1/multiplexer2to1Arch 1545215044 \
+      FL C:/hlocal/TOC/Lab6/multiplexer2to1.vhd EN work/multiplexer2to1 1545215043
+FL C:/hlocal/TOC/Lab6/multiplexer4to1.vhd 2018/12/04.15:42:09 P.15xf
+EN work/multiplexer4to1 1545215047 FL C:/hlocal/TOC/Lab6/multiplexer4to1.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/multiplexer4to1/multiplexer4to1Arch 1545215048 \
+      FL C:/hlocal/TOC/Lab6/multiplexer4to1.vhd EN work/multiplexer4to1 1545215047
+FL C:/hlocal/TOC/Lab6/register.vhd 2018/12/04.15:52:34 P.15xf
+EN work/reg 1545215041 FL C:/hlocal/TOC/Lab6/register.vhd PB ieee/std_logic_1164 1335251622
+AR work/reg/regArch 1545215042 \
+      FL C:/hlocal/TOC/Lab6/register.vhd EN work/reg 1545215041
+FL C:/hlocal/TOC/Lab6/registerBank.vhd 2018/12/04.15:38:19 P.15xf
+EN work/registerBank 1545215049 FL C:/hlocal/TOC/Lab6/registerBank.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627
+AR work/registerBank/registerBankArch 1545215050 \
+      FL C:/hlocal/TOC/Lab6/registerBank.vhd EN work/registerBank 1545215049 \
+      CP busA
+FL C:/hlocal/TOC/Lab6/TestBenchMIPSMulticycle.vhd 2018/12/04.21:50:46 P.15xf
+EN work/TestBenchMIPSMulticycle 0 \
+      FL C:/hlocal/TOC/Lab6/TestBenchMIPSMulticycle.vhd PB ieee/std_logic_1164 1335251622
+AR work/TestBenchMIPSMulticycle/behavior 0 \
+      FL C:/hlocal/TOC/Lab6/TestBenchMIPSMulticycle.vhd \
+      EN work/TestBenchMIPSMulticycle 0 CP MIPSMulticycle

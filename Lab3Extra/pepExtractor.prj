@@ -1,0 +1,3 @@
+work	"Mult_with_Adders.vhd"
+work	"adder8bits.vhd"
+work	"register8bits.vhd"

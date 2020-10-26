@@ -1,0 +1,6 @@
+work	"FSM.vhd"
+work	"Module.vhd"
+work	"comparator.vhd"
+work	"conv_7seg.vhd"
+work	"debouncer.vhd"
+work	"register8bits.vhd"

@@ -1,0 +1,5 @@
+vhdl work "C:\hlocal\TOC\Lab5\sequence_generator.vhd"
+vhdl work "C:\hlocal\TOC\Lab5\freq_divider.vhd"
+vhdl work "C:\hlocal\TOC\Lab5\definitions.vhd"
+vhdl work "C:\hlocal\TOC\Lab5\C_mod10.vhd"
+vhdl work "C:\hlocal\TOC\Lab5\data_path.vhd"

@@ -1,0 +1,6 @@
+AR adder8b rtl C:/hlocal/Lab3/adder8bits.vhd sub00/vhpl01 1540991092
+EN mult_with_adders NULL C:/hlocal/Lab3/Mult_with_Adders.vhd sub00/vhpl02 1540991095
+AR mult_with_adders behavioral C:/hlocal/Lab3/Mult_with_Adders.vhd sub00/vhpl03 1540991096
+EN adder8b NULL C:/hlocal/Lab3/adder8bits.vhd sub00/vhpl00 1540991091
+AR register8bits arch_asyn C:/hlocal/Lab3/register8bits.vhd sub00/vhpl05 1540991094
+EN register8bits NULL C:/hlocal/Lab3/register8bits.vhd sub00/vhpl04 1540991093

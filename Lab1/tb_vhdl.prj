@@ -1,0 +1,4 @@
+vhdl work "C:\hlocal\Lab\reg_paralelo.vhd"
+vhdl work "C:\hlocal\Lab\adder.vhd"
+vhdl work "C:\hlocal\Lab\counter.vhd"
+vhdl work "C:\hlocal\Lab\tb.vhd"

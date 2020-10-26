@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/hlocal/TOC/Lab6/TestBenchMIPSMulticycle.xst" -ofn "C:/hlocal/TOC/Lab6/TestBenchMIPSMulticycle.syr" 

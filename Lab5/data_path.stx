@@ -1,0 +1,42 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/hlocal/TOC/Lab5/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to C:/hlocal/TOC/Lab5/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/hlocal/TOC/Lab5/definitions.vhd" in Library work.
+Compiling vhdl file "C:/hlocal/TOC/Lab5/freq_divider.vhd" in Library work.
+Architecture divider_arch of Entity freq_divider is up to date.
+Compiling vhdl file "C:/hlocal/TOC/Lab5/C_mod10.vhd" in Library work.
+Architecture arch of Entity c_mod10 is up to date.
+Compiling vhdl file "C:/hlocal/TOC/Lab5/sequence_generator.vhd" in Library work.
+Architecture behavioral of Entity sequence_generator is up to date.
+Compiling vhdl file "C:/hlocal/TOC/Lab5/data_path.vhd" in Library work.
+Entity <data_path> compiled.
+Entity <data_path> (Architecture <arch_dp>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.41 secs
+ 
+--> 
+
+Total memory usage is 4509728 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

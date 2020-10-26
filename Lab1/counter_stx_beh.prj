@@ -1,0 +1,3 @@
+vhdl isim_temp "reg_paralelo.vhd"
+vhdl isim_temp "adder.vhd"
+vhdl isim_temp "counter.vhd"

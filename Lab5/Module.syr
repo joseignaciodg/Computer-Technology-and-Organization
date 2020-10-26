@@ -1,0 +1,675 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Module.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Module.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Module"
+Output Format                      : NGC
+Target Device                      : xc3s1000-5-ft256
+
+---- Source Options
+Top Module Name                    : Module
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/hlocal/Lab5/definitions.vhd" in Library work.
+Compiling vhdl file "C:/hlocal/Lab5/freq_divider.vhd" in Library work.
+Architecture divider_arch of Entity freq_divider is up to date.
+Compiling vhdl file "C:/hlocal/Lab5/C_mod10.vhd" in Library work.
+Architecture arch of Entity c_mod10 is up to date.
+Compiling vhdl file "C:/hlocal/Lab5/sequence_generator.vhd" in Library work.
+Architecture behavioral of Entity sequence_generator is up to date.
+Compiling vhdl file "C:/hlocal/Lab5/controller.vhd" in Library work.
+Architecture arch_controller of Entity controller is up to date.
+Compiling vhdl file "C:/hlocal/Lab5/data_path.vhd" in Library work.
+Architecture arch_dp of Entity data_path is up to date.
+Compiling vhdl file "C:/hlocal/Lab5/slot_machine.vhd" in Library work.
+Architecture structural of Entity slot_machine is up to date.
+Compiling vhdl file "C:/hlocal/Lab5/conv_7seg.vhd" in Library work.
+Architecture behavioral of Entity conv_7seg is up to date.
+Compiling vhdl file "C:/hlocal/Lab5/Module.vhd" in Library work.
+Architecture behavioral of Entity module is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Module> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <slot_machine> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <conv_7seg> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <controller> in library <work> (architecture <arch_controller>).
+
+Analyzing hierarchy for entity <data_path> in library <work> (architecture <arch_dp>).
+
+Analyzing hierarchy for entity <freq_divider> in library <work> (architecture <divider_arch>) with generics.
+	half_count = "10111110101111000001111111"
+
+Analyzing hierarchy for entity <C_mod10> in library <work> (architecture <arch>) with generics.
+	n = 4
+
+Analyzing hierarchy for entity <freq_divider> in library <work> (architecture <divider_arch>) with generics.
+	half_count = "10011000100101100111111"
+
+Analyzing hierarchy for entity <freq_divider> in library <work> (architecture <divider_arch>) with generics.
+	half_count = "1100001101001111"
+
+Analyzing hierarchy for entity <sequence_generator> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Module> in library <work> (Architecture <behavioral>).
+Entity <Module> analyzed. Unit <Module> generated.
+
+Analyzing Entity <slot_machine> in library <work> (Architecture <structural>).
+Entity <slot_machine> analyzed. Unit <slot_machine> generated.
+
+Analyzing Entity <controller> in library <work> (Architecture <arch_controller>).
+Entity <controller> analyzed. Unit <controller> generated.
+
+Analyzing Entity <data_path> in library <work> (Architecture <arch_dp>).
+Entity <data_path> analyzed. Unit <data_path> generated.
+
+Analyzing generic Entity <freq_divider.1> in library <work> (Architecture <divider_arch>).
+	half_count = "10111110101111000001111111"
+Entity <freq_divider.1> analyzed. Unit <freq_divider.1> generated.
+
+Analyzing generic Entity <C_mod10> in library <work> (Architecture <arch>).
+	n = 4
+Entity <C_mod10> analyzed. Unit <C_mod10> generated.
+
+Analyzing generic Entity <freq_divider.2> in library <work> (Architecture <divider_arch>).
+	half_count = "10011000100101100111111"
+Entity <freq_divider.2> analyzed. Unit <freq_divider.2> generated.
+
+Analyzing generic Entity <freq_divider.3> in library <work> (Architecture <divider_arch>).
+	half_count = "1100001101001111"
+Entity <freq_divider.3> analyzed. Unit <freq_divider.3> generated.
+
+Analyzing Entity <sequence_generator> in library <work> (Architecture <behavioral>).
+Entity <sequence_generator> analyzed. Unit <sequence_generator> generated.
+
+Analyzing Entity <conv_7seg> in library <work> (Architecture <behavioral>).
+Entity <conv_7seg> analyzed. Unit <conv_7seg> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <conv_7seg>.
+    Related source file is "C:/hlocal/Lab5/conv_7seg.vhd".
+    Found 16x7-bit ROM for signal <display>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <conv_7seg> synthesized.
+
+
+Synthesizing Unit <controller>.
+    Related source file is "C:/hlocal/Lab5/controller.vhd".
+    Found finite state machine <FSM_0> for signal <STATE>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 8                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | s_init                                         |
+    | Power Up State     | s_init                                         |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <controller> synthesized.
+
+
+Synthesizing Unit <freq_divider_1>.
+    Related source file is "C:/hlocal/Lab5/freq_divider.vhd".
+    Found 1-bit register for signal <clk_aux>.
+    Found 26-bit up counter for signal <count>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <freq_divider_1> synthesized.
+
+
+Synthesizing Unit <C_mod10>.
+    Related source file is "C:/hlocal/Lab5/C_mod10.vhd".
+    Found 4-bit up counter for signal <aux_output>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <C_mod10> synthesized.
+
+
+Synthesizing Unit <freq_divider_2>.
+    Related source file is "C:/hlocal/Lab5/freq_divider.vhd".
+    Found 1-bit register for signal <clk_aux>.
+    Found 23-bit up counter for signal <count>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <freq_divider_2> synthesized.
+
+
+Synthesizing Unit <freq_divider_3>.
+    Related source file is "C:/hlocal/Lab5/freq_divider.vhd".
+    Found 1-bit register for signal <clk_aux>.
+    Found 16-bit up counter for signal <count>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <freq_divider_3> synthesized.
+
+
+Synthesizing Unit <sequence_generator>.
+    Related source file is "C:/hlocal/Lab5/sequence_generator.vhd".
+    Found 10-bit register for signal <dout>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <sequence_generator> synthesized.
+
+
+Synthesizing Unit <data_path>.
+    Related source file is "C:/hlocal/Lab5/data_path.vhd".
+    Found 4-bit comparator equal for signal <status_0$cmp_eq0000> created at line 72.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <data_path> synthesized.
+
+
+Synthesizing Unit <slot_machine>.
+    Related source file is "C:/hlocal/Lab5/slot_machine.vhd".
+Unit <slot_machine> synthesized.
+
+
+Synthesizing Unit <Module>.
+    Related source file is "C:/hlocal/Lab5/Module.vhd".
+Unit <Module> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 2
+# Counters                                             : 6
+ 16-bit up counter                                     : 1
+ 23-bit up counter                                     : 1
+ 26-bit up counter                                     : 1
+ 4-bit up counter                                      : 3
+# Registers                                            : 13
+ 1-bit register                                        : 13
+# Comparators                                          : 1
+ 4-bit comparator equal                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <mod_slot_machine/U_CNTRL/STATE/FSM> on signal <STATE[1:3]> with gray encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ s_init      | 000
+ s_start     | 001
+ s_stop      | 011
+ s_equal     | 010
+ s_not_equal | 110
+-------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 2
+# Counters                                             : 6
+ 16-bit up counter                                     : 1
+ 23-bit up counter                                     : 1
+ 26-bit up counter                                     : 1
+ 4-bit up counter                                      : 3
+# Registers                                            : 13
+ Flip-Flops                                            : 13
+# Comparators                                          : 1
+ 4-bit comparator equal                                : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Module> ...
+
+Optimizing unit <sequence_generator> ...
+
+Optimizing unit <data_path> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <mod_slot_machine/U_DP/SEQ_GENE/dout_1> in Unit <Module> is equivalent to the following 3 FFs/Latches, which will be removed : <mod_slot_machine/U_DP/SEQ_GENE/dout_3> <mod_slot_machine/U_DP/SEQ_GENE/dout_7> <mod_slot_machine/U_DP/SEQ_GENE/dout_5> 
+INFO:Xst:2261 - The FF/Latch <mod_slot_machine/U_DP/SEQ_GENE/dout_2> in Unit <Module> is equivalent to the following 4 FFs/Latches, which will be removed : <mod_slot_machine/U_DP/SEQ_GENE/dout_0> <mod_slot_machine/U_DP/SEQ_GENE/dout_4> <mod_slot_machine/U_DP/SEQ_GENE/dout_6> <mod_slot_machine/U_DP/SEQ_GENE/dout_8> 
+Found area constraint ratio of 100 (+ 5) on block Module, actual ratio is 1.
+FlipFlop mod_slot_machine/U_DP/SEQ_GENE/dout_2 has been replicated 4 time(s) to handle iob=true attribute.
+FlipFlop mod_slot_machine/U_DP/SEQ_GENE/dout_1 has been replicated 3 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 93
+ Flip-Flops                                            : 93
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Module.ngr
+Top Level Output File Name         : Module
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 28
+
+Cell Usage :
+# BELS                             : 336
+#      GND                         : 1
+#      INV                         : 8
+#      LUT1                        : 62
+#      LUT2                        : 68
+#      LUT3                        : 8
+#      LUT3_L                      : 2
+#      LUT4                        : 44
+#      LUT4_L                      : 1
+#      MUXCY                       : 75
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 65
+# FlipFlops/Latches                : 93
+#      FDC                         : 65
+#      FDCE                        : 25
+#      FDR                         : 2
+#      FDRSE                       : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 27
+#      IBUF                        : 3
+#      OBUF                        : 24
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1000ft256-5 
+
+ Number of Slices:                      103  out of   7680     1%  
+ Number of Slice Flip Flops:             83  out of  15360     0%  
+ Number of 4 input LUTs:                193  out of  15360     1%  
+ Number of IOs:                          28
+ Number of bonded IOBs:                  28  out of    173    16%  
+    IOB Flip Flops:                      10
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------+---------------------------------------------------+-------+
+Clock Signal                            | Clock buffer(FF name)                             | Load  |
+----------------------------------------+---------------------------------------------------+-------+
+clock                                   | BUFGP                                             | 71    |
+mod_slot_machine/U_DP/U_FREQ1KHZ/clk_aux| NONE(mod_slot_machine/U_DP/SEQ_GENE/dout_2)       | 14    |
+mod_slot_machine/U_DP/U_FREQ1HZ/clk_aux | NONE(mod_slot_machine/U_DP/COUNTER_1/aux_output_3)| 4     |
+mod_slot_machine/U_DP/U_FREQ10HZ/clk_aux| NONE(mod_slot_machine/U_DP/COUNTER_2/aux_output_3)| 4     |
+----------------------------------------+---------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------+---------------------------------------------------+-------+
+Control Signal                                                         | Buffer(FF name)                                   | Load  |
+-----------------------------------------------------------------------+---------------------------------------------------+-------+
+mod_slot_machine/reset_u(mod_slot_machine/reset_u1_INV_0:O)            | NONE(mod_slot_machine/U_DP/SEQ_GENE/dout_1)       | 78    |
+mod_slot_machine/control<2>(mod_slot_machine/U_CNTRL/STATE_FSM_Out01:O)| NONE(mod_slot_machine/U_DP/COUNTER_1/aux_output_0)| 12    |
+-----------------------------------------------------------------------+---------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 6.149ns (Maximum Frequency: 162.633MHz)
+   Minimum input arrival time before clock: 4.581ns
+   Maximum output required time after clock: 7.945ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 6.149ns (frequency: 162.633MHz)
+  Total number of paths / destination ports: 2301 / 74
+-------------------------------------------------------------------------
+Delay:               6.149ns (Levels of Logic = 27)
+  Source:            mod_slot_machine/U_DP/U_FREQ1HZ/count_24 (FF)
+  Destination:       mod_slot_machine/U_DP/U_FREQ1HZ/count_0 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: mod_slot_machine/U_DP/U_FREQ1HZ/count_24 to mod_slot_machine/U_DP/U_FREQ1HZ/count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.626   1.040  mod_slot_machine/U_DP/U_FREQ1HZ/count_24 (mod_slot_machine/U_DP/U_FREQ1HZ/count_24)
+     LUT1:I0->O            1   0.479   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<1>_rt (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<1>_rt)
+     MUXCY:S->O            1   0.435   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<1> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<2> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<3> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<4> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<5> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<6> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<7> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<8> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<9> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<10> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<10>)
+     MUXCY:CI->O           1   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<11> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<11>)
+     MUXCY:CI->O           1   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<12> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<12>)
+     MUXCY:CI->O           1   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<13> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<13>)
+     MUXCY:CI->O           1   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<14> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<14>)
+     MUXCY:CI->O           1   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<15> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<15>)
+     MUXCY:CI->O           1   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<16> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<16>)
+     MUXCY:CI->O           1   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<17> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<17>)
+     MUXCY:CI->O           1   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<18> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<18>)
+     MUXCY:CI->O           1   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<19> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<19>)
+     MUXCY:CI->O           1   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<20> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<20>)
+     MUXCY:CI->O           1   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<21> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<21>)
+     MUXCY:CI->O           1   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<22> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<22>)
+     MUXCY:CI->O           1   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<23> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<23>)
+     MUXCY:CI->O           0   0.056   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<24> (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_cy<24>)
+     XORCY:CI->O           1   0.786   0.851  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_xor<25> (mod_slot_machine/U_DP/Result<25>)
+     LUT2:I1->O            1   0.479   0.000  mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_eqn_251 (mod_slot_machine/U_DP/U_FREQ1HZ/Mcount_count_eqn_25)
+     FDC:D                     0.176          mod_slot_machine/U_DP/U_FREQ1HZ/count_0
+    ----------------------------------------
+    Total                      6.149ns (4.258ns logic, 1.891ns route)
+                                       (69.2% logic, 30.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mod_slot_machine/U_DP/U_FREQ1HZ/clk_aux'
+  Clock period: 3.540ns (frequency: 282.462MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               3.540ns (Levels of Logic = 2)
+  Source:            mod_slot_machine/U_DP/COUNTER_1/aux_output_3 (FF)
+  Destination:       mod_slot_machine/U_DP/COUNTER_1/aux_output_3 (FF)
+  Source Clock:      mod_slot_machine/U_DP/U_FREQ1HZ/clk_aux rising
+  Destination Clock: mod_slot_machine/U_DP/U_FREQ1HZ/clk_aux rising
+
+  Data Path: mod_slot_machine/U_DP/COUNTER_1/aux_output_3 to mod_slot_machine/U_DP/COUNTER_1/aux_output_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.626   1.040  mod_slot_machine/U_DP/COUNTER_1/aux_output_3 (mod_slot_machine/U_DP/COUNTER_1/aux_output_3)
+     LUT4:I0->O            1   0.479   0.740  mod_slot_machine/U_DP/COUNTER_1/Mcount_aux_output_xor<3>1_SW1 (N38)
+     LUT4:I2->O            1   0.479   0.000  mod_slot_machine/U_DP/COUNTER_1/Mcount_aux_output_xor<3>1 (mod_slot_machine/U_DP/COUNTER_1/Mcount_aux_output3)
+     FDCE:D                    0.176          mod_slot_machine/U_DP/COUNTER_1/aux_output_3
+    ----------------------------------------
+    Total                      3.540ns (1.760ns logic, 1.780ns route)
+                                       (49.7% logic, 50.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mod_slot_machine/U_DP/U_FREQ1KHZ/clk_aux'
+  Clock period: 3.164ns (frequency: 316.026MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               3.164ns (Levels of Logic = 2)
+  Source:            mod_slot_machine/U_DP/COUNTER_3/aux_output_0 (FF)
+  Destination:       mod_slot_machine/U_DP/COUNTER_3/aux_output_3 (FF)
+  Source Clock:      mod_slot_machine/U_DP/U_FREQ1KHZ/clk_aux rising
+  Destination Clock: mod_slot_machine/U_DP/U_FREQ1KHZ/clk_aux rising
+
+  Data Path: mod_slot_machine/U_DP/COUNTER_3/aux_output_0 to mod_slot_machine/U_DP/COUNTER_3/aux_output_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            12   0.626   1.245  mod_slot_machine/U_DP/COUNTER_3/aux_output_0 (mod_slot_machine/U_DP/COUNTER_3/aux_output_0)
+     LUT3_L:I0->LO         1   0.479   0.159  mod_slot_machine/U_DP/COUNTER_3/Mcount_aux_output_xor<3>1_SW1 (N34)
+     LUT4:I2->O            1   0.479   0.000  mod_slot_machine/U_DP/COUNTER_3/Mcount_aux_output_xor<3>1 (mod_slot_machine/U_DP/COUNTER_3/Mcount_aux_output3)
+     FDCE:D                    0.176          mod_slot_machine/U_DP/COUNTER_3/aux_output_3
+    ----------------------------------------
+    Total                      3.164ns (1.760ns logic, 1.404ns route)
+                                       (55.6% logic, 44.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mod_slot_machine/U_DP/U_FREQ10HZ/clk_aux'
+  Clock period: 3.164ns (frequency: 316.026MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               3.164ns (Levels of Logic = 2)
+  Source:            mod_slot_machine/U_DP/COUNTER_2/aux_output_0 (FF)
+  Destination:       mod_slot_machine/U_DP/COUNTER_2/aux_output_3 (FF)
+  Source Clock:      mod_slot_machine/U_DP/U_FREQ10HZ/clk_aux rising
+  Destination Clock: mod_slot_machine/U_DP/U_FREQ10HZ/clk_aux rising
+
+  Data Path: mod_slot_machine/U_DP/COUNTER_2/aux_output_0 to mod_slot_machine/U_DP/COUNTER_2/aux_output_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            12   0.626   1.245  mod_slot_machine/U_DP/COUNTER_2/aux_output_0 (mod_slot_machine/U_DP/COUNTER_2/aux_output_0)
+     LUT3_L:I0->LO         1   0.479   0.159  mod_slot_machine/U_DP/COUNTER_2/Mcount_aux_output_xor<3>1_SW1 (N36)
+     LUT4:I2->O            1   0.479   0.000  mod_slot_machine/U_DP/COUNTER_2/Mcount_aux_output_xor<3>1 (mod_slot_machine/U_DP/COUNTER_2/Mcount_aux_output3)
+     FDCE:D                    0.176          mod_slot_machine/U_DP/COUNTER_2/aux_output_3
+    ----------------------------------------
+    Total                      3.164ns (1.760ns logic, 1.404ns route)
+                                       (55.6% logic, 44.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              4.581ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       mod_slot_machine/U_CNTRL/STATE_FSM_FFd3 (FF)
+  Destination Clock: clock rising
+
+  Data Path: reset to mod_slot_machine/U_CNTRL/STATE_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.715   0.681  reset_IBUF (reset_IBUF)
+     INV:I->O             81   0.479   1.814  mod_slot_machine/reset_u1_INV_0 (mod_slot_machine/reset_u)
+     FDR:R                     0.892          mod_slot_machine/U_CNTRL/STATE_FSM_FFd3
+    ----------------------------------------
+    Total                      4.581ns (2.086ns logic, 2.495ns route)
+                                       (45.5% logic, 54.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mod_slot_machine/U_DP/U_FREQ1KHZ/clk_aux'
+  Total number of paths / destination ports: 38 / 17
+-------------------------------------------------------------------------
+Offset:              7.945ns (Levels of Logic = 2)
+  Source:            mod_slot_machine/U_DP/COUNTER_3/aux_output_3 (FF)
+  Destination:       Result2<6> (PAD)
+  Source Clock:      mod_slot_machine/U_DP/U_FREQ1KHZ/clk_aux rising
+
+  Data Path: mod_slot_machine/U_DP/COUNTER_3/aux_output_3 to Result2<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             9   0.626   1.250  mod_slot_machine/U_DP/COUNTER_3/aux_output_3 (mod_slot_machine/U_DP/COUNTER_3/aux_output_3)
+     LUT4:I0->O            1   0.479   0.681  mod_conv_7seg2/Mrom_display21 (Result2_2_OBUF)
+     OBUF:I->O                 4.909          Result2_2_OBUF (Result2<2>)
+    ----------------------------------------
+    Total                      7.945ns (6.014ns logic, 1.931ns route)
+                                       (75.7% logic, 24.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mod_slot_machine/U_DP/U_FREQ10HZ/clk_aux'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              7.945ns (Levels of Logic = 2)
+  Source:            mod_slot_machine/U_DP/COUNTER_2/aux_output_3 (FF)
+  Destination:       Result1<6> (PAD)
+  Source Clock:      mod_slot_machine/U_DP/U_FREQ10HZ/clk_aux rising
+
+  Data Path: mod_slot_machine/U_DP/COUNTER_2/aux_output_3 to Result1<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             9   0.626   1.250  mod_slot_machine/U_DP/COUNTER_2/aux_output_3 (mod_slot_machine/U_DP/COUNTER_2/aux_output_3)
+     LUT4:I0->O            1   0.479   0.681  mod_conv_7seg1/Mrom_display21 (Result1_2_OBUF)
+     OBUF:I->O                 4.909          Result1_2_OBUF (Result1<2>)
+    ----------------------------------------
+    Total                      7.945ns (6.014ns logic, 1.931ns route)
+                                       (75.7% logic, 24.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.87 secs
+ 
+--> 
+
+Total memory usage is 4531992 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

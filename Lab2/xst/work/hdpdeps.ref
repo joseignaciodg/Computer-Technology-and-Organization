@@ -1,0 +1,30 @@
+V3 23
+FL C:/hlocal/TOC/Lab2/comparator.vhd 2018/10/16.23:37:55 P.15xf
+EN work/comparator 1539764297 FL C:/hlocal/TOC/Lab2/comparator.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/comparator/Behavioral 1539764298 \
+      FL C:/hlocal/TOC/Lab2/comparator.vhd EN work/comparator 1539764297
+FL C:/hlocal/TOC/Lab2/conv_7seg.vhd 2018/10/08.10:32:40 P.15xf
+EN work/conv_7seg 1539764295 FL C:/hlocal/TOC/Lab2/conv_7seg.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/conv_7seg/Behavioral 1539764296 \
+      FL C:/hlocal/TOC/Lab2/conv_7seg.vhd EN work/conv_7seg 1539764295
+FL C:/hlocal/TOC/Lab2/debouncer.vhd 2018/10/09.23:10:18 P.15xf
+EN work/debouncer 1539764293 FL C:/hlocal/TOC/Lab2/debouncer.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/STD_LOGIC_UNSIGNED 1335251625
+AR work/debouncer/debouncerArch 1539764294 \
+      FL C:/hlocal/TOC/Lab2/debouncer.vhd EN work/debouncer 1539764293
+FL C:/hlocal/TOC/Lab2/FSM.vhd 2018/10/16.18:41:13 P.15xf
+EN work/FSM 1539764299 FL C:/hlocal/TOC/Lab2/FSM.vhd PB ieee/std_logic_1164 1335251622
+AR work/FSM/Behavioral 1539764300 \
+      FL C:/hlocal/TOC/Lab2/FSM.vhd EN work/FSM 1539764299
+FL C:/hlocal/TOC/Lab2/Module.vhd 2018/10/16.23:54:42 P.15xf
+EN work/Module 1539764301 FL C:/hlocal/TOC/Lab2/Module.vhd PB ieee/std_logic_1164 1335251622
+AR work/Module/Structural 1539764302 \
+      FL C:/hlocal/TOC/Lab2/Module.vhd EN work/Module 1539764301 CP register8bits \
+      CP debouncer CP conv_7seg CP comparator CP FSM
+FL C:/hlocal/TOC/Lab2/register8bits.vhd 2018/10/16.17:48:02 P.15xf
+EN work/register8bits 1539764291 FL C:/hlocal/TOC/Lab2/register8bits.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/register8bits/ARCH_ASYN 1539764292 \
+      FL C:/hlocal/TOC/Lab2/register8bits.vhd EN work/register8bits 1539764291

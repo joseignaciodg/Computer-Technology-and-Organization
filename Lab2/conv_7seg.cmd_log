@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/hlocal/TOC/Lab2/conv_7seg.xst" -ofn "C:/hlocal/TOC/Lab2/conv_7seg.syr" 

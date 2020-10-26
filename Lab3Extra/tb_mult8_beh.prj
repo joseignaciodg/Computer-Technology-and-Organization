@@ -1,0 +1,2 @@
+vhdl work "mult8bits.vhd"
+vhdl work "tb_mult.vhd"

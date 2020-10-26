@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/hlocal/TOC/Lab2/TestBench_isim_beh.exe" -prj "C:/hlocal/TOC/Lab2/TestBench_beh.prj" "TestBench" 

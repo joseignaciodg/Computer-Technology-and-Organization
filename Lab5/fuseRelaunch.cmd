@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/hlocal/TOC/Lab5/tb_module_isim_beh.exe" -prj "C:/hlocal/TOC/Lab5/tb_module_beh.prj" "work.tb_module" 

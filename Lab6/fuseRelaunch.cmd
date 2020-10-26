@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/hlocal/TOC/Lab6/TestBenchMIPSMulticycle_isim_beh.exe" -prj "C:/hlocal/TOC/Lab6/TestBenchMIPSMulticycle_beh.prj" "work.TestBenchMIPSMulticycle" 

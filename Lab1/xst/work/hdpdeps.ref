@@ -1,0 +1,20 @@
+V3 17
+FL C:/hlocal/Lab/adder.vhd 2018/10/03.14:05:08 P.15xf
+EN work/adder 1538570070 FL C:/hlocal/Lab/adder.vhd PB ieee/std_logic_1164 1335251622 \
+      PB ieee/std_logic_arith 1335251623 PB ieee/STD_LOGIC_UNSIGNED 1335251625
+AR work/adder/behavioral 1538570071 \
+      FL C:/hlocal/Lab/adder.vhd EN work/adder 1538570070
+FL C:/hlocal/Lab/counter.vhd 2018/10/03.14:26:05 P.15xf
+EN work/counter 1538570074 FL C:/hlocal/Lab/counter.vhd PB ieee/std_logic_1164 1335251622
+AR work/counter/Behavioral 1538570075 \
+      FL C:/hlocal/Lab/counter.vhd EN work/counter 1538570074 CP adder \
+      CP parallel_reg
+FL C:/hlocal/Lab/reg_paralelo.vhd 2018/10/03.14:28:01 P.15xf
+EN work/parallel_reg 1538570072 FL C:/hlocal/Lab/reg_paralelo.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/parallel_reg/circuit 1538570073 \
+      FL C:/hlocal/Lab/reg_paralelo.vhd EN work/parallel_reg 1538570072
+FL C:/hlocal/Lab/tb.vhd 2018/10/03.14:06:29 P.15xf
+EN work/tb 0 FL C:/hlocal/Lab/tb.vhd PB ieee/std_logic_1164 1335251622
+AR work/tb/behavior 0 \
+      FL C:/hlocal/Lab/tb.vhd EN work/tb 0 CP counter

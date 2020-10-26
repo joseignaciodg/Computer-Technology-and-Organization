@@ -1,0 +1,6 @@
+vhdl isim_temp "register8bits.vhd"
+vhdl isim_temp "FSM.vhd"
+vhdl isim_temp "conv_7seg.vhd"
+vhdl isim_temp "comparator.vhd"
+vhdl isim_temp "Module.vhd"
+vhdl isim_temp "TestBench.vhd"

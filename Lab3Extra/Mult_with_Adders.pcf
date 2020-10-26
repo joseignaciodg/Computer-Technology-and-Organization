@@ -1,0 +1,23 @@
+//! **************************************************************************
+// Written by: Map P.15xf on Wed Oct 31 13:00:35 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Y<1>" LOCATE = SITE "K15" LEVEL 1;
+COMP "Y<2>" LOCATE = SITE "K16" LEVEL 1;
+COMP "Y<3>" LOCATE = SITE "F15" LEVEL 1;
+COMP "Z<0>" LOCATE = SITE "L5" LEVEL 1;
+COMP "Z<1>" LOCATE = SITE "N2" LEVEL 1;
+COMP "Z<2>" LOCATE = SITE "M3" LEVEL 1;
+COMP "Z<3>" LOCATE = SITE "N1" LEVEL 1;
+COMP "Z<4>" LOCATE = SITE "T13" LEVEL 1;
+COMP "Z<5>" LOCATE = SITE "L15" LEVEL 1;
+COMP "Z<6>" LOCATE = SITE "J13" LEVEL 1;
+COMP "Z<7>" LOCATE = SITE "H15" LEVEL 1;
+COMP "X<0>" LOCATE = SITE "P12" LEVEL 1;
+COMP "X<1>" LOCATE = SITE "J1" LEVEL 1;
+COMP "X<2>" LOCATE = SITE "H1" LEVEL 1;
+COMP "X<3>" LOCATE = SITE "H3" LEVEL 1;
+COMP "Y<0>" LOCATE = SITE "G2" LEVEL 1;
+SCHEMATIC END;
+

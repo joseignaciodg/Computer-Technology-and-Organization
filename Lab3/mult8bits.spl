@@ -1,0 +1,6 @@
+[Inputs]
+=X[3:0]=
+=Y[3:0]=
+[Outputs]
+=Z[7:0]=
+[BiDir]

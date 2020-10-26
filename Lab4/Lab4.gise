@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Lab4.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ASM_multiplier.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ASM_multiplier.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ASM_multiplier.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Module_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="adder_sub.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="adder_sub.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="adder_sub.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="controller.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="controller.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="controller.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="controller_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="data_path.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="data_path.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="data_path.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="data_path_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="debouncer.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="debouncer.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="debouncer.xst"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_multiplier_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_multiplier_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_multiplier_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_multiplier_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1542133454" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1542133454">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542193028" xil_pn:in_ck="-4260494119937016871" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1542193028">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ASM_multiplier.vhd"/>
+      <outfile xil_pn:name="L2/conv_7seg.vhd"/>
+      <outfile xil_pn:name="L2/debouncer.vhd"/>
+      <outfile xil_pn:name="Module.vhd"/>
+      <outfile xil_pn:name="New folder/adder_std.vhd"/>
+      <outfile xil_pn:name="New folder/adder_sub_std.vhd"/>
+      <outfile xil_pn:name="New folder/asynch_reg.vhd"/>
+      <outfile xil_pn:name="New folder/controller.vhd"/>
+      <outfile xil_pn:name="New folder/data_path.vhd"/>
+      <outfile xil_pn:name="New folder/definitions.vhd"/>
+      <outfile xil_pn:name="tb_multiplier.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1542192839" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-2686130875427037797" xil_pn:start_ts="1542192839">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542192839" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-7353175308515740845" xil_pn:start_ts="1542192839">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542133459" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="1603439608260958319" xil_pn:start_ts="1542133459">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542193028" xil_pn:in_ck="-4260494119937016871" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1542193028">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ASM_multiplier.vhd"/>
+      <outfile xil_pn:name="L2/conv_7seg.vhd"/>
+      <outfile xil_pn:name="L2/debouncer.vhd"/>
+      <outfile xil_pn:name="Module.vhd"/>
+      <outfile xil_pn:name="New folder/adder_std.vhd"/>
+      <outfile xil_pn:name="New folder/adder_sub_std.vhd"/>
+      <outfile xil_pn:name="New folder/asynch_reg.vhd"/>
+      <outfile xil_pn:name="New folder/controller.vhd"/>
+      <outfile xil_pn:name="New folder/data_path.vhd"/>
+      <outfile xil_pn:name="New folder/definitions.vhd"/>
+      <outfile xil_pn:name="tb_multiplier.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1542193033" xil_pn:in_ck="-4260494119937016871" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6887542728009333174" xil_pn:start_ts="1542193028">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="tb_multiplier_beh.prj"/>
+      <outfile xil_pn:name="tb_multiplier_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1542193033" xil_pn:in_ck="-4488888893136470925" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3726607664479168723" xil_pn:start_ts="1542193033">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="tb_multiplier_isim_beh.wdb"/>
+    </transform>
+  </transforms>
+
+</generated_project>

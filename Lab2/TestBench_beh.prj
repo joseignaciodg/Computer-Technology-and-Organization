@@ -1,0 +1,6 @@
+vhdl work "register8bits.vhd"
+vhdl work "FSM.vhd"
+vhdl work "conv_7seg.vhd"
+vhdl work "comparator.vhd"
+vhdl work "Module.vhd"
+vhdl work "TestBench.vhd"
